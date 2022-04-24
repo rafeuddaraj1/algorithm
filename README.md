@@ -8,11 +8,11 @@ int main()
     scanf("%d %d", &a, &b);
 
     while(a != 0) {
-        int rem = a % b;
-        a = b;
-        b = rem;
+        int rem = b % a;
+        b = a;
+        a = rem;
     }
-    printf("%d\n", a);
+    printf("%d\n", b);
     return 0; 
 }
 
